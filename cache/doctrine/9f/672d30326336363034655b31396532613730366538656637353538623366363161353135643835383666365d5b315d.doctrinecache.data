@@ -1,0 +1,9 @@
+1520479811
+a:2:{s:7:"content";s:821:"<h2>It's as easy as 1-2-3 to publish, share and collaboratively edit your Grav site content!</h2>
+<ol>
+<li>Run the setup wizard for the <a href="/admin/plugins/git-sync">GitSync Plugin</a> and follow the provided instructions.</li>
+<li>Configure the <a href="/admin/themes/mytheme">Git Sync Link</a> settings in the Theme options to change the display and functionality of the automatically displayed Git Sync Link.</li>
+<li>If you would like, you can display a <a href="/admin/themes/mytheme">Creative Commons(CC) Attribution License</a> using the Theme options as well.</li>
+</ol>
+<hr>
+<p>Want to no longer display this page on your site? Delete the page "Read Me" on your <a href="/admin/pages">Pages panel</a> or set the page's <code>Published</code> option under the <code>Options</code> Tab to <code>Yes</code>.</p>";s:12:"content_meta";N;}
