@@ -1,0 +1,117 @@
+.image-credit-wrapper {
+overflow: hidden;
+position: relative;
+max-width: 1000px;
+}
+
+.image-credit-wrapper .image-credit {
+position: absolute;
+right: 0px;
+bottom: 0px;
+}
+
+.image-credit {
+background: rgba(0,0,0,.5);
+border-top-left-radius:3px;
+color: #ccc;
+display: inline-block;
+font-size: 11px;
+font-family: helvetica;
+font-weight: 300;
+padding: 5px 8px;
+position: absolute;
+bottom: 0;
+right: 0;
+}
+
+.image-credit a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.image-credit a:hover {
+  color: #ccc;
+  text-decoration: underline;
+}
+
+.hidden {
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+}
+
+p a:hover:not(.button) {
+    color: #0e6e90;
+    text-decoration: underline;
+}
+
+.tags a:hover {
+    background: #1BB3E9;
+    color: #FFFFFF;
+}
+
+.pagination a:hover {
+    background: #1BB3E9;
+    color: #FFFFFF;
+}
+
+div#breadcrumbs {
+  padding-left: 0; }
+  @media only all and (max-width: 47.938em) {
+    div#breadcrumbs {
+      display: block; } }
+
+.gitrepo-link-note {
+  color: #888888;
+}
+
+.creative-commons-license {
+  color: #888888;
+}
+
+#footer .totop {
+    position: absolute;
+    bottom: 11rem;
+    text-align: center;
+    left: 0;
+    right: 0;
+}
+
+#footer {
+    position: absolute;
+    background: #333;
+    height: 12rem;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: #999;
+    text-align: center;
+}
+
+#body {
+  background: #fff;
+  padding-top: 8rem;
+  padding-bottom: 18rem; }
+
+.listbullet ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.listbullet li {
+  padding-left: 1em;
+  text-indent: -1em;
+}
+
+.listbullet li:before {
+  content: '\2713';
+  padding-right: 5px;
+}
+
+.modularitem h4 {
+  color: #666666;
+}
