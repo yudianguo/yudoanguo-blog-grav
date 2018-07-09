@@ -1,0 +1,26 @@
+1523080145
+a:2:{s:7:"content";s:1514:"<p>Yum（Yellow dog Updater, Modified）由Duke University团队，修改Yellow Dog Linux的Yellow Dog Updater开发而成，是一个基于RPM包管理的字符前端软件包管理器。能够从指定的服务器自动下载RPM包并且安装，可以处理依赖性关系，并且一次安装所有依赖的软件包，无须繁琐地一次次下载、安装。被Yellow Dog Linux本身，以及Fedora、Red Hat Enterprise Linux采用。</p>
+<p>1、源库中所有可以安装或更新的rpm包</p>
+<pre><code>yum list</code></pre>
+<hr />
+<p>2、安装所有更新软件</p>
+<pre><code>yum update</code></pre>
+<p>3、列出所有可更新的软件包</p>
+<pre><code>yum list updates</code></pre>
+<p>4、列出所有已安装的软件包</p>
+<pre><code>yum list installed</code></pre>
+<p>5、列出所有已安装但不在 Yum Repository 內的软件包</p>
+<pre><code>yum list extras</code></pre>
+<p>6、出所指定的软件包</p>
+<pre><code>yum list &lt;package_name&gt;</code></pre>
+<p>7、用YUM获取软件包信息</p>
+<pre><code>yum info &lt;package_name&gt;</code></pre>
+<p>8、列出所有软件包的信息</p>
+<pre><code>yum info</code></pre>
+<p>9、列出所有可更新的软件包信息</p>
+<pre><code>yum info updates</code></pre>
+<p>10、列出所有已安裝的软件包信息</p>
+<pre><code>yum info installed</code></pre>
+<p>11、列出软件包提供哪些文件</p>
+<pre><code>yum provides &lt;package_name&gt;</code></pre>
+<p>https://zh.wikipedia.org/wiki/Yellowdog_Updater,_Modified</p>";s:12:"content_meta";N;}

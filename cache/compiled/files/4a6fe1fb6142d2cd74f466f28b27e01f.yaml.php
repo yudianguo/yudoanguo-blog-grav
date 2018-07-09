@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/yudoanguo-blog-grav/user/plugins/login/languages/hr.yaml',
-    'modified' => 1512503274,
+    'modified' => 1530112301,
     'data' => [
         'PLUGIN_LOGIN' => [
             'ACCESS_DENIED' => 'Pristup odbijen...',

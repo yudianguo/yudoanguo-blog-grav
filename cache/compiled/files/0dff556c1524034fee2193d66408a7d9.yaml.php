@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/yudoanguo-blog-grav/user/plugins/admin/languages/nl.yaml',
-    'modified' => 1512503272,
+    'modified' => 1530113193,
     'data' => [
         'PLUGIN_ADMIN' => [
             'ADMIN_BETA_MSG' => 'Dit is een betaversie! Gebruik op een live site is voor eigen risico...',

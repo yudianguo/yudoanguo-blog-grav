@@ -2,10 +2,10 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/yudoanguo-blog-grav/user/plugins/error/blueprints.yaml',
-    'modified' => 1512503272,
+    'modified' => 1530112640,
     'data' => [
         'name' => 'Error',
-        'version' => '1.6.0',
+        'version' => '1.6.1',
         'description' => 'Displays the error page.',
         'icon' => 'warning',
         'author' => [

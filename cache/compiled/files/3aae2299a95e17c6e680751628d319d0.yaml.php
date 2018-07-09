@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/yudoanguo-blog-grav/system/languages/lt.yaml',
-    'modified' => 1512503272,
+    'modified' => 1530110954,
     'data' => [
         'INFLECTOR_UNCOUNTABLE' => [
             2 => 'ryžiai',

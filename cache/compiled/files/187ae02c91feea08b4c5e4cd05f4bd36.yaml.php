@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/yudoanguo-blog-grav/user/plugins/aboutme/aboutme.yaml',
-    'modified' => 1517407611,
+    'modified' => 1523768128,
     'data' => [
         'enabled' => true,
         'built_in_css' => true,

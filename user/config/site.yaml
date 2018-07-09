@@ -1,7 +1,17 @@
-title: 枫雪
+title: 于殿国的博客
+default_lang: en
 author:
   name: 于殿国
-  email: 'yu_dianguo@163.com'
+  email: yu_dianguo@163.com
+taxonomies:
+  - category
+  - tag
 metadata:
-    description: 'Grav is an easy to use, yet powerful, open source flat-file CMS'
-
+  description: web开发|php开发|基础知识
+summary:
+  enabled: true
+  format: short
+  size: 300
+  delimiter: '==='
+blog:
+  route: /blog

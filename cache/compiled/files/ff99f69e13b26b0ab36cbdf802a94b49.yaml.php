@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/yudoanguo-blog-grav/system/languages/vi.yaml',
-    'modified' => 1512503272,
+    'modified' => 1530110954,
     'data' => [
         'FRONTMATTER_ERROR_PAGE' => '---
 title: %1$s

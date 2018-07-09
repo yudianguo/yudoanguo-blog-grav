@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/yudoanguo-blog-grav/user/plugins/markdown-notices/blueprints.yaml',
-    'modified' => 1512503272,
+    'modified' => 1523768131,
     'data' => [
         'name' => 'Markdown Notices',
         'version' => '1.0.0',

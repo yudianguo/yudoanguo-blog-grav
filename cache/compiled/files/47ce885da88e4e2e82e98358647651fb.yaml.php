@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/yudoanguo-blog-grav/user/plugins/jscomments/languages.yaml',
-    'modified' => 1515295750,
+    'modified' => 1523768131,
     'data' => [
         'de' => [
             'PLUGINS' => [

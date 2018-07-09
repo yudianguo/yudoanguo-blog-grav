@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/yudoanguo-blog-grav/user/config/system.yaml',
-    'modified' => 1517497588,
+    'modified' => 1523768198,
     'data' => [
         'absolute_urls' => false,
         'timezone' => '',

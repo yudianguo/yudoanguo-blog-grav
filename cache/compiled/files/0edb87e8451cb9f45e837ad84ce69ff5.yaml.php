@@ -2,11 +2,14 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/yudoanguo-blog-grav/user/plugins/form/form.yaml',
-    'modified' => 1515295855,
+    'modified' => 1530112293,
     'data' => [
         'enabled' => true,
         'built_in_css' => true,
+        'inline_css' => true,
         'refresh_prevention' => false,
+        'client_side_validation' => true,
+        'inline_errors' => false,
         'files' => [
             'multiple' => false,
             'limit' => 10,

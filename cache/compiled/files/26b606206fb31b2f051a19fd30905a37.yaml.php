@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/yudoanguo-blog-grav/user/themes/antimatter-open-publishing/blueprints.yaml',
-    'modified' => 1515326594,
+    'modified' => 1523768080,
     'data' => [
         'name' => 'Antimatter Open Publishing',
         'version' => '1.1.9',

@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/yudoanguo-blog-grav/system/blueprints/config/system.yaml',
-    'modified' => 1517411477,
+    'modified' => 1530110954,
     'data' => [
         'title' => 'PLUGIN_ADMIN.SYSTEM',
         'form' => [
@@ -967,6 +967,9 @@ return [
                                 -1 => 'PLUGIN_ADMIN.ERROR_SYSTEM',
                                 0 => 'PLUGIN_ADMIN.ERROR_SIMPLE',
                                 1 => 'PLUGIN_ADMIN.ERROR_FULL_BACKTRACE'
+                            ],
+                            'validate' => [
+                                'type' => 'int'
                             ]
                         ],
                         'errors.log' => [

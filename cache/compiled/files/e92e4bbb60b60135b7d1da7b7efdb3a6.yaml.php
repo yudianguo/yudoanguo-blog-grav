@@ -2,10 +2,10 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/yudoanguo-blog-grav/user/plugins/admin/blueprints.yaml',
-    'modified' => 1512503272,
+    'modified' => 1530113193,
     'data' => [
         'name' => 'Admin Panel',
-        'version' => '1.6.7',
+        'version' => '1.8.5',
         'description' => 'Adds an advanced administration panel to manage your site',
         'icon' => 'empire',
         'author' => [
@@ -21,19 +21,19 @@ return [
         'dependencies' => [
             0 => [
                 'name' => 'grav',
-                'version' => '>=1.3.9'
+                'version' => '>=1.4.5'
             ],
             1 => [
                 'name' => 'form',
-                'version' => '>=2.11.0'
+                'version' => '>=2.14.0'
             ],
             2 => [
                 'name' => 'login',
-                'version' => '>=2.5.0'
+                'version' => '>=2.7.0'
             ],
             3 => [
                 'name' => 'email',
-                'version' => '~2.0'
+                'version' => '>=2.7.0'
             ]
         ],
         'form' => [
@@ -166,14 +166,14 @@ return [
                     ],
                     'help' => 'Auto will use blueprint if available, if none found, it will use "Expert" mode.'
                 ],
-                'frontend_pages_target' => [
+                'frontend_preview_target' => [
                     'type' => 'select',
-                    'label' => 'Open frontend pages in',
+                    'label' => 'Preview pages target',
                     'size' => 'medium',
-                    'default' => '_blank',
+                    'default' => 'inline',
                     'options' => [
+                        'inline' => 'Inline in Admin',
                         '_blank' => 'New tab',
-                        'frontend_tab' => 'Separate tab (always the same)',
                         '_self' => 'Current tab'
                     ]
                 ],
@@ -188,11 +188,17 @@ return [
                         'fullpath' => 'Show fullpath'
                     ]
                 ],
+                'pages.parents_levels' => [
+                    'type' => 'text',
+                    'label' => 'Parents Levels',
+                    'size' => 'small',
+                    'help' => 'The number of levels to show in parent select list'
+                ],
                 'google_fonts' => [
                     'type' => 'toggle',
                     'label' => 'Use Google Fonts',
-                    'highlight' => 1,
-                    'default' => 1,
+                    'highlight' => 0,
+                    'default' => 0,
                     'options' => [
                         1 => 'PLUGIN_ADMIN.ENABLED',
                         0 => 'PLUGIN_ADMIN.DISABLED'
@@ -201,6 +207,16 @@ return [
                         'type' => 'bool'
                     ],
                     'help' => 'Use Google custom fonts.  Disable this to use Helvetica. Useful when using Cyrillic and other languages with unsupported characters.'
+                ],
+                'admin_icons' => [
+                    'type' => 'select',
+                    'size' => 'medium',
+                    'label' => 'Icon Style',
+                    'default' => 'line-awesome',
+                    'options' => [
+                        'line-awesome' => 'Lighter Line Icons (LineAwesome)',
+                        'font-awesome' => 'Darker Solid Icons (FontAwesome)'
+                    ]
                 ],
                 'show_beta_msg' => [
                     'type' => 'hidden'
@@ -273,6 +289,94 @@ return [
                     'type' => 'array',
                     'label' => 'Hide modular page types in Admin',
                     'value_only' => true
+                ],
+                'MediaResize' => [
+                    'type' => 'section',
+                    'title' => 'Page Media Image Resizer',
+                    'underline' => true
+                ],
+                'MediaResizeNote' => [
+                    'type' => 'spacer',
+                    'text' => 'PLUGIN_ADMIN.PAGEMEDIA_RESIZER',
+                    'markdown' => true
+                ],
+                'pagemedia.resize_width' => [
+                    'type' => 'number',
+                    'size' => 'x-small',
+                    'append' => 'pixels',
+                    'label' => 'Resize Width',
+                    'default' => 0,
+                    'validate' => [
+                        'type' => 'number'
+                    ],
+                    'help' => 'Resize wide images down to the set value'
+                ],
+                'pagemedia.resize_height' => [
+                    'type' => 'number',
+                    'size' => 'x-small',
+                    'append' => 'pixels',
+                    'label' => 'Resize Height',
+                    'default' => 0,
+                    'validate' => [
+                        'type' => 'number'
+                    ],
+                    'help' => 'Resize tall images down to the set value'
+                ],
+                'pagemedia.res_min_width' => [
+                    'type' => 'number',
+                    'size' => 'x-small',
+                    'append' => 'pixels',
+                    'label' => 'Resolution Min Width',
+                    'default' => 0,
+                    'validate' => [
+                        'type' => 'number'
+                    ],
+                    'help' => 'The minimum width allowed for an image to be added'
+                ],
+                'pagemedia.res_min_height' => [
+                    'type' => 'number',
+                    'size' => 'x-small',
+                    'append' => 'pixels',
+                    'label' => 'Resolution Min Height',
+                    'default' => 0,
+                    'validate' => [
+                        'type' => 'number'
+                    ],
+                    'help' => 'The minimum height allowed for an image to be added'
+                ],
+                'pagemedia.res_max_width' => [
+                    'type' => 'number',
+                    'size' => 'x-small',
+                    'append' => 'pixels',
+                    'label' => 'Resolution Max Width',
+                    'default' => 0,
+                    'validate' => [
+                        'type' => 'number'
+                    ],
+                    'help' => 'The maximum width allowed for an image to be added'
+                ],
+                'pagemedia.res_max_height' => [
+                    'type' => 'number',
+                    'size' => 'x-small',
+                    'append' => 'pixels',
+                    'label' => 'Resolution Max Height',
+                    'default' => 0,
+                    'validate' => [
+                        'type' => 'number'
+                    ],
+                    'help' => 'The maximum height allowed for an image to be added'
+                ],
+                'pagemedia.resize_quality' => [
+                    'type' => 'number',
+                    'size' => 'x-small',
+                    'append' => '0...1',
+                    'label' => 'Resize Quality',
+                    'default' => 0.8,
+                    'validate' => [
+                        'type' => 'number',
+                        'step' => 0.01
+                    ],
+                    'help' => 'The quality to use when resizing an image. Between 0 and 1 value.'
                 ],
                 'Dashboard' => [
                     'type' => 'section',

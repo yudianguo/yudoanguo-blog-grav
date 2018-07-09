@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/yudoanguo-blog-grav/user/plugins/simplesearch/blueprints.yaml',
-    'modified' => 1516516733,
+    'modified' => 1523768120,
     'data' => [
         'name' => 'SimpleSearch',
         'version' => '1.14.1',

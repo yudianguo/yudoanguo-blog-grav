@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/yudoanguo-blog-grav/user/accounts/yudianguo.yaml',
-    'modified' => 1517534881,
+    'modified' => 1530112080,
     'data' => [
         'email' => 'yu_dianguo@163.com',
         'fullname' => 'yudianguo',
@@ -17,12 +17,13 @@ return [
                 'login' => 'true'
             ]
         ],
-        'hashed_password' => '$2y$10$gcXuYqXczGO//m.ZNhhYn.dKhlEcw34PEJGspRHK1EvFoLdU78k4C',
+        'hashed_password' => '$2y$10$bIC.VI93rFFBqI17sFgo/eEJn1/QcG7D3ctIQqIwBLPwhc6KACShu',
         'language' => 'en',
         'login_attempts' => [
             
         ],
         'twofa_secret' => '2ZCUWBCPEWGDXIIFEEV6HS2Z5NZBLYZW',
-        'twofa_enabled' => false
+        'twofa_enabled' => false,
+        'authorized' => true
     ]
 ];

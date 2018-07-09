@@ -2,10 +2,10 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/yudoanguo-blog-grav/user/plugins/form/blueprints.yaml',
-    'modified' => 1515295855,
+    'modified' => 1530112293,
     'data' => [
         'name' => 'Form',
-        'version' => '2.11.1',
+        'version' => '2.15.1',
         'description' => 'Enables the forms handling',
         'icon' => 'check-square',
         'author' => [
@@ -20,7 +20,7 @@ return [
         'dependencies' => [
             0 => [
                 'name' => 'grav',
-                'version' => '>=1.3.9'
+                'version' => '>=1.4.5'
             ]
         ],
         'form' => [
@@ -56,11 +56,52 @@ return [
                                 'type' => 'bool'
                             ]
                         ],
+                        'inline_css' => [
+                            'type' => 'toggle',
+                            'label' => 'PLUGIN_FORM.USE_INLINE_CSS',
+                            'highlight' => 1,
+                            'default' => 1,
+                            'options' => [
+                                1 => 'Enabled',
+                                0 => 'Disabled'
+                            ],
+                            'validate' => [
+                                'type' => 'bool'
+                            ]
+                        ],
                         'refresh_prevention' => [
                             'type' => 'toggle',
                             'label' => 'PLUGIN_FORM.REFRESH_PREVENTION',
                             'help' => 'PLUGIN_FORM.REFRESH_PREVENTION_HELP',
                             'highlight' => 1,
+                            'default' => 0,
+                            'options' => [
+                                1 => 'Enabled',
+                                0 => 'Disabled'
+                            ],
+                            'validate' => [
+                                'type' => 'bool'
+                            ]
+                        ],
+                        'client_side_validation' => [
+                            'type' => 'toggle',
+                            'label' => 'PLUGIN_FORM.CLIENT_SIDE_VALIDATION',
+                            'help' => 'PLUGIN_FORM.CLIENT_SIDE_VALIDATION_HELP',
+                            'highlight' => 1,
+                            'default' => 1,
+                            'options' => [
+                                1 => 'Enabled',
+                                0 => 'Disabled'
+                            ],
+                            'validate' => [
+                                'type' => 'bool'
+                            ]
+                        ],
+                        'inline_errors' => [
+                            'type' => 'toggle',
+                            'label' => 'PLUGIN_FORM.INLINE_ERRORS',
+                            'help' => 'PLUGIN_FORM.INLINE_ERRORS_HELP',
+                            'highlight' => 0,
                             'default' => 0,
                             'options' => [
                                 1 => 'Enabled',

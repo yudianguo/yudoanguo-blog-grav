@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/yudoanguo-blog-grav/user/plugins/jscomments/blueprints.yaml',
-    'modified' => 1515295750,
+    'modified' => 1523768130,
     'data' => [
         'name' => 'JSComments',
         'version' => '2.1.2',
